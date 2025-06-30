@@ -14,3 +14,6 @@ db.sqlite3
 Airflow/logs/*
 Airflow/plugins/*
 outline.md
+env/
+.env/
+.idea/
