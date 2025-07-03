@@ -6,7 +6,7 @@ services:
       - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
       - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=sqlite:////opt/airflow/airflow.db
       - AIRFLOW__WEBSERVER__AUTH_BACKEND=airflow.auth.managed_user_auth
-      - _PIP_ADDITIONAL_REQUIREMENTS=pandas requests
+      - _PIP_ADDITIONAL_REQUIREMENTS=pandas requests scikit-learn xgboost
     volumes:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs

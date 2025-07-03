@@ -56,7 +56,7 @@ def load_data(**context):
 with DAG(
     dag_id="daily_weather_etl",
     default_args=default_args,
-    schedule_interval="0 8 * * *",  
+    schedule="0 8 * * *",
     catchup=False,
     description="ETL DAG to fetch daily weather data",
     tags=["weather", "ETL"],
